@@ -1,9 +1,11 @@
 @charset "UTF-8";
 
+
 * {
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
+    
 }
 
 html, body {
@@ -30,15 +32,38 @@ article#iphone {
     transform: translate(-50%, -50%);
     height: 627px;
     width: 311px;
-    background: url('/imagens/frame-iphone.png') no-repeat top center fixed; 
+    background: url('/imagens/frame-iphone.png') no-repeat top center fixed;
+    background-size: cover;
+    
 }
 
-#sociais > img {
+iframe#tela {
+    position: relative;
+    top: 80px;
+    left: 22px;
+
+    width: 267px;
+    height: 472px;
+
+    
+}
+
+ img {
     border-radius: 50%;
     width: 50px;
-    padding: 10px;
+    margin: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.411);
+    box-sizing: border-box;
 }
 
 article#sociais {
     text-align: right;
+    
+}
+
+ img:hover {
+    border: 2px solid white;
+    transition: 0.5s;
+    transform: translate(-5px, -5px);
+    box-shadow: 1px 10px 5px rgba(0, 0, 0, 0.415);;
 }
